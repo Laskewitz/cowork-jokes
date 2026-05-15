@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/vDevPreview/MicrosoftTeams.schema.json",
+  "manifestVersion": "devPreview",
+  "version": "1.8.1",
+  "id": "2ce13252-1e0b-461d-852f-5f9cae1914cf",
+  "packageName": "com.laskewitz.jokes-for-cowork",
+  "developer": {
+    "name": "Daniel Laskewitz",
+    "websiteUrl": "https://laskewitz.io",
+    "privacyUrl": "https://laskewitz.io",
+    "termsOfUseUrl": "https://laskewitz.io"
+  },
+  "name": {
+    "short": "Jokes for Cowork",
+    "full": "Dad Jokes and Chuck Norris Jokes for Cowork"
+  },
+  "description": {
+    "short": "Random Chuck Norris and dad jokes for Cowork.",
+    "full": "A Microsoft 365 Copilot Cowork plugin that tells Chuck Norris and dad jokes via a public MCP server. Includes the tell-a-joke skill backed by the Jokes MCP connector."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#2B579A",
+  "agentSkills": [
+    { "folder": "./skills/tell-a-joke" }
+  ],
+  "agentConnectors": [
+    {
+      "id": "jokes-mcp",
+      "displayName": "Jokes MCP",
+      "description": "Random Chuck Norris and dad jokes via a public MCP server. Tools: get-chuck-joke, get-chuck-joke-by-category, get-chuck-categories, get-dad-joke. No authentication.",
+      "toolSource": {
+        "remoteMcpServer": {
+          "mcpServerUrl": "https://<your-mcp-server-url>/mcp",
+          "authorization": {
+            "type": "None"
+          }
+        }
+      }
+    }
+  ]
+}
