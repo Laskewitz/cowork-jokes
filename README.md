@@ -32,6 +32,16 @@ _Because every standup deserves a punchline._
 
 ## 🔨 Build the package
 
+> [!IMPORTANT]
+> Before building, open `manifest.json` and replace the placeholder MCP server URL
+> with your own deployed server URL:
+>
+> ```json
+> "mcpServerUrl": "https://<your-mcp-server-url>/mcp"
+> ```
+>
+> To set up the MCP server used by this plugin, follow the lab at [aka.ms/mcsmcp/lab](https://aka.ms/mcsmcp/lab).
+
 ```powershell
 .\scripts\build.ps1
 ```
