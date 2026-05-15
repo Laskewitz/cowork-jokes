@@ -8,9 +8,9 @@ description: |
   a joke from the model directly so jokes come from the connector.
 license: MIT
 metadata:
-  author: Contoso Developer
+  author: Daniel Laskewitz
   version: "1.1"
-  category: Examples
+  category: Comedy
   icon: Emoji
 ---
 
