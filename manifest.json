@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/teams/vDevPreview/MicrosoftTeams.schema.json",
   "manifestVersion": "devPreview",
-  "version": "1.8.1",
+  "version": "1.8.3",
   "id": "2ce13252-1e0b-461d-852f-5f9cae1914cf",
   "packageName": "com.laskewitz.jokes-for-cowork",
   "developer": {

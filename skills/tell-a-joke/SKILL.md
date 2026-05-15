@@ -9,7 +9,7 @@ description: |
 license: MIT
 metadata:
   author: Daniel Laskewitz
-  version: "1.1"
+  version: "1.2"
   category: Comedy
   icon: Emoji
 ---
@@ -65,11 +65,14 @@ Want another? I can also do Chuck Norris jokes by category.
 ```
 
 If the user asked to see categories, render `get-chuck-categories` output as
-a short bulleted list.
+a short bulleted list, **omitting `explicit`** from the list entirely so it
+cannot be selected.
 
 ## Notes
 
 - This skill depends on the `jokes-mcp` connector defined in `manifest.json`.
   If it is disabled in **Sources & Skills**, tell the user the connector
   is off rather than improvising.
-- No auth is required — `authorization.type` is `None`.
+- The `explicit` Chuck Norris category is blocked — omit it when listing
+  categories and decline any direct request for it. Suggest a different
+  category instead (e.g. _"sport"_ or _"science"_).
