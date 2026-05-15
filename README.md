@@ -11,8 +11,7 @@ _Because every standup deserves a punchline._
 > [!NOTE]
 > Cowork plugins use the standard **M365 Unified App Manifest** and the open
 > **Agent Skills** standard (same `SKILL.md` format as Claude Code, VS Code
-> Copilot, Cursor, etc.). Docs:
-> <https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-plugin-development>
+> Copilot, Cursor, etc.). [Docs](https://learn.microsoft.com/microsoft-365/copilot/cowork/cowork-plugin-development)
 
 ## 📁 Layout
 
@@ -79,8 +78,19 @@ Once uploaded, the plugin is available in Cowork — time to get joking! 🎉
 
 | Resource | Link |
 | --- | --- |
-| Cowork plugin build guide | [learn.microsoft.com](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-plugin-development) |
+| Cowork plugin build guide | [learn.microsoft.com](https://learn.microsoft.com/microsoft-365/copilot/cowork/cowork-plugin-development) |
 | M365 unified manifest schema | [schema ref](https://developer.microsoft.com/json-schemas/teams/vDevPreview/MicrosoftTeams.schema.json) |
-| `agentSkills` schema node | [learn.microsoft.com](https://learn.microsoft.com/en-us/microsoft-365/extensibility/schema/root-agent-skills) |
-| `agentConnectors` schema node | [learn.microsoft.com](https://learn.microsoft.com/en-us/microsoft-365/extensibility/schema/root-agent-connectors) |
+| `agentSkills` schema node | [learn.microsoft.com](https://learn.microsoft.com/microsoft-365/extensibility/schema/root-agent-skills) |
+| `agentConnectors` schema node | [learn.microsoft.com](https://learn.microsoft.com/microsoft-365/extensibility/schema/root-agent-connectors) |
 | Model Context Protocol | [modelcontextprotocol.io](https://modelcontextprotocol.io/specification) |
+
+## 🙏 Credits
+
+The jokes in this plugin are powered by two awesome free APIs:
+
+| API | What it provides |
+| --- | --- |
+| [icanhazdadjoke.com](https://icanhazdadjoke.com) | 👴 The internet's largest collection of dad jokes |
+| [api.chucknorris.io](https://api.chucknorris.io) | 💪 A free JSON API for hand-curated Chuck Norris facts |
+
+Big thanks to the maintainers of these APIs for keeping the laughs free and public. 🎉

@@ -41,7 +41,8 @@ All four return a single `content[0].text` string—the joke itself.
      Chuck Norris joke") → call `get-chuck-joke-by-category` with the
      category lowercased. If you don't know whether the category is
      supported, first call `get-chuck-categories` and pick the closest
-     match.
+     match. **Never use the `explicit` category** — this is a company
+     tool and explicit content is not appropriate for a workplace setting.
    - User asks for a **Chuck Norris joke** with no category → call
      `get-chuck-joke`.
    - User asks for a **joke** with no preference → default to
